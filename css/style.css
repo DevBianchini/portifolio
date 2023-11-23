@@ -115,5 +115,32 @@ button:hover {
 
 /* ======== CONTATO ======== */
 #contact {
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+.text-camp {
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid var(--blue);
+    border-radius: 12px;
+    padding: 2px 16px;
+}
+form input:focus {
+    /*remove a borda no foco*/
+    outline: none;
+}
+form input::placeholder {
+    color: var(--black);
+}
+form * {
+    margin: 12px 0;
 }
