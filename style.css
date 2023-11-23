@@ -96,6 +96,7 @@ span {
 img {
     box-shadow: 0 0 .4rem .4rem var(--light-grey);
     border-radius: 12px;
+    width: 100%;
 }
 button {
     padding: 12px 24px;
@@ -120,6 +121,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 form {
     display: flex;
