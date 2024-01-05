@@ -62,7 +62,7 @@ body {
   </div>
   
   <div id="loading" class="hidden">
-    <div class="bar">Processando...</br></div>
+    <div class="bar"></div>
     <div class="porcent"></div>
   </div>
 
@@ -90,7 +90,7 @@ button.addEventListener("click", () => {
 const simulateLoading = () => {
     for (let i = 0; i <= 100; i++) {
         setTimeout(() => {
-            loader.innerHTML = i + "%";
+            loader.innerHTML = "Processando" + i + "%";
             if (i === 100) {
                 // Oculta a barra de carregamento e exibe a mensagem final
                 loading.classList.toggle("hidden");
